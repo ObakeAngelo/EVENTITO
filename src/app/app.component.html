@@ -1,3 +1,17 @@
-<p>checkea si te gusta el colo</p>
-<p>{{ textoCheck }}</p>
+<h2>checkea si te gusta el colo</h2>
 <input type="checkbox" [checked]="checkRegistro" (click)="setregistro()" />
+<p>{{ textoCheck }}</p>
+
+<h2>Escribe porque te gusta el colo colo</h2>
+
+<input (keyup.enter)="onKeyUp($event)" />
+
+<p>{{ textoInput }}</p>
+
+<input
+  type="image"
+  [src]="imgPathUp"
+  (click)="onUp()"
+  (mouseenter)="onUpHover()"
+  (mouseleave)="onUpLeave()"
+/>
